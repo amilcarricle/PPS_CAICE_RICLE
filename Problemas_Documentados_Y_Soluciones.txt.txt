@@ -1,0 +1,17 @@
+Durante la creacion del ejecutable se presentaron problemas con la creacion del '.exe'.
+Para solucionar se recurrio a buscar en linea. Se llego mediante busqueda a la siguiente pagina:
+'https://stackoverflow.com/questions/71804849/py-to-exe-error-filenotfounderror-the-path-does-not-exist'
+en la misma el usuario presenta los mismos errores que nuestro programa. Para solucionarlo se llevan a paso a paso
+las recomendaciones dadas. 
+
+#####
+Primero que nada luego de haber ejecutado 'pyinstaller' y verificar que el ejecutable no funciona. Borraremos las
+dos carpetas creadas por el pyinstaller 'build' y 'dist', pero dejaremos el archivo de especificaciones '.spec'.
+Abrimos el '.spec' con el IDE que tenemos a mano y realizamos las modificaciones recomendadas en la siguiente pagina:
+https://python.tutorialink.com/issues-compiling-mediapipe-with-pyinstaller-on-macos/´
+Una vez modificado el '.spec' abriremos la ventana de comando y realizaremos los mismos pasos que veniamos realizando
+anteriormente, pero con la diferencia de que al momento de ejecutar 'pyinstaller' ejecutaremos el siguiente comando:
+'pyinstaller mouse_inhalambrico_v_2.spec'
+eso nos genera un nuevo '.exe' que funcionara.
+
+ 
